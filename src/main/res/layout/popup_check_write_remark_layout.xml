@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="6dp"
+            android:textColor="#FF333333"
+            android:text="请输入备注说明"/>
+        <ImageView
+            android:id="@+id/check_write_remmark_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_or_cancel"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+      <!--  <EditText
+            android:id="@+id/check_write_remmark_edittext_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_input_edittext"
+            android:lines="2"
+            android:maxLines="1"
+            android:minLines="2"
+            android:textSize="18sp"
+            android:padding="6dp"
+            android:inputType="number"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:hint="请填写多的数量"/>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/check_write_remmark_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_edittext"
+                android:lines="2"
+                android:maxLines="1"
+                android:minLines="2"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:layout_marginTop="12dp"
+                android:padding="18dp"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:hint="请填写差额数量"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--android:drawableLeft="" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/check_write_remmark_submitbutton_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_button_background"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="多(+)确认"/>
+            <Button
+                android:id="@+id/check_write_remmark_submitbutton_sub"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_button_background"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="少(-)确认"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

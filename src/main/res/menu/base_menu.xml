@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/pckbill_obtain"
+        android:icon="@drawable/menu_download_24dp"
+        android:title="领取调度单" />
+
+    <item
+        android:id="@+id/pckbill_submit"
+        android:icon="@drawable/menu_upload_24dp"
+        android:title="提交调度单" />
+
+    <item
+        android:id="@+id/check_print"
+        android:icon="@drawable/menu_print_24dp"
+        android:title="打印条码" />
+
+
+
+
+</menu>

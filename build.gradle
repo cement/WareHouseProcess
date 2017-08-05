@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        warehouse {
+            keyAlias 'changqing'
+            keyPassword 'dcq761029'
+            storeFile file('I:/ASworks/keystore/ChangQingWareHouse.jks')
+            storePassword 'dcq761029'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId 'com.changqing.warehouse'
+        minSdkVersion 14
+        targetSdkVersion 21
+        maxSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.warehouse
+        }
+    }
+    productFlavors {
+        alphp {
+            minSdkVersion 11
+            applicationId 'com.changqing.warehouse.alpha'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0.0'
+            signingConfig signingConfigs.warehouse
+        }
+        bata {
+            minSdkVersion 11
+            applicationId 'com.changqing.warehouse.bata'
+            signingConfig signingConfigs.warehouse
+            versionCode 1
+            versionName '1.0.0'
+        }
+        aplay {
+            minSdkVersion 11
+            applicationId 'com.changqing.warehouse.alpha'
+            signingConfig signingConfigs.warehouse
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0.0'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    dexOptions {
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.allenliu.badgeview:library:1.1.1'
+    compile project(':volley')
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile project(':libzxing')
+    compile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson-parent:2.8.1'
+    compile 'com.alibaba:fastjson:1.2.35'
+}

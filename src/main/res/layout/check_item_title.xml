@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/check_item_title_shippingArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/titile_button_background_selector"
+            android:text="集号"/>
+
+        <!--<TextView
+            android:id="@+id/check_item_LocName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="18sp"
+            android:textColor="#009688"
+            android:layout_weight="1" />-->
+
+        <TextView
+            android:id="@+id/check_item_title_comname"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/titile_button_background_selector"
+            android:text="名称"/>
+
+        <TextView
+            android:id="@+id/check_item_title_quantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:background="@drawable/titile_button_background_selector"
+            android:text="数量"/>
+
+
+
+        <TextView
+            android:id="@+id/check_item_title_action"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="操作"/>
+</LinearLayout>
+
+    <!--
+    pckBillno  LocName  InspSeqNo quantity   shippingArea   remark
+      调号      货位       验号     数量         集号        区号
+    -->

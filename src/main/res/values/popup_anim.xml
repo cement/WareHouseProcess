@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="popup_anim_add_cart">
+	     <item name="android:windowEnterAnimation">@anim/add_cart_popup_show</item>
+	     <item name="android:windowExitAnimation">@anim/select_date_popup_hide</item>
+	</style>
+	<style name="popup_anim_select_date">
+		<item name="android:windowEnterAnimation">@anim/select_date_popup_show</item>
+		<item name="android:windowExitAnimation">@anim/select_date_popup_hide</item>
+	</style>
+	I:\ASworks\PZCHMobileMall2\PzchMobileMall\src\main\res\values\popup_anim.xml
+</resources>

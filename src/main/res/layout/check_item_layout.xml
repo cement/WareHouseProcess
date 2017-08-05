@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="1dp"
+
+    app:cardMaxElevation="3dp"
+    app:contentPadding="0dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/check_item_shippingArea"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="#270bc4"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!--<TextView
+            android:id="@+id/check_item_LocName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="18sp"
+            android:textColor="#009688"
+            android:layout_weight="1" />-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/check_item_comname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="#3a7b02"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/check_item_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/check_item_quantity"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#c40b0b"
+                android:textSize="20sp"/>
+        <TextView
+                android:id="@+id/check_item_pickup_remark"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#c40b0b"
+                android:textSize="20sp"/>
+          <!--  <TextView
+                android:id="@+id/check_item_diff"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#0babc4"
+                android:textSize="20sp"
+                android:text="xxxx"/>-->
+
+
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="12"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/check_item_diff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#0babc4"/>
+
+            <Button
+                android:id="@+id/check_item_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="确认" />
+
+        </FrameLayout>
+
+        <!--android:background="@drawable/check_item_button_background_selector"
+        android:textColor="#ffffff"-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+    <!--
+    pckBillno  LocName  InspSeqNo quantity   shippingArea   remark
+      调号      货位       验号     数量         集号        区号
+    -->

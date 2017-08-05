@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_navigation_pckbill"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="调度单" />
+
+    <item
+        android:id="@+id/bottom_navigation_uncheck"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="未复核" />
+
+    <item
+        android:id="@+id/bottom_navigation_checked"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="已复核" />
+
+
+</menu>

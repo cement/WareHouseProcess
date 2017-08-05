@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_navigation_normal"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="调度单" />
+
+    <item
+        android:id="@+id/bottom_navigation_unpick"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="未取货" />
+
+    <item
+        android:id="@+id/bottom_navigation_pickup"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="已取货" />
+    <item
+        android:id="@+id/bottom_navigation_basket"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="已入筐" />
+
+</menu>

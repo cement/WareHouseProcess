@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/remark_non_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:background="@drawable/popup_button_background"
+        android:text="库存不足"/>
+    <TextView
+        android:id="@+id/remark_pack_damage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:background="@drawable/popup_button_background"
+        android:text="包装破损"/>
+    <TextView
+        android:id="@+id/remark_cust_returns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:clickable="true"
+
+        android:background="@drawable/popup_button_background"
+        android:text="客户退货"/>
+   <TextView
+        android:id="@+id/remark_other_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:background="@drawable/popup_button_background"
+        android:text="其他原因"/>
+    <!--<android.support.v7.widget.SearchView
+        android:id="@+id/remark_other_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="请输入"
+        android:textSize="18sp"
+        android:background="@drawable/input_edittext"/>-->
+
+
+</LinearLayout>
